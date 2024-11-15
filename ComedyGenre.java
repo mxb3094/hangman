@@ -29,4 +29,16 @@ public class ComedyGenre implements Genre
             System.out.println("Error was not able to read words from ComedyGenre.txt")
           } 
     }
+    //COMEDY GENRE method
+    public ComedyGenre()
+    {
+        wordbankused = new ArrayList<>();
+        LoadWordsUsedFromFile();
+
+    }
+    //specific methos implementation for this class
+    public List<String> getWordsUsed()
+    {
+        return wordbankused;
+    }
 }
