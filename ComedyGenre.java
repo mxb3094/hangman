@@ -10,8 +10,23 @@ public class ComedyGenre implements Genre
     //method to read words from file
     private void LoadWordsUsedFromFile()
     {
-         try (BufferedReader reader = new BufferedReader(new FileReader("comedy.txt"))) {  // Hardcoded file name here
+         try (BufferedReader reader = new BufferedReader(new FileReader("ComedyGenre.txt")))
+          {  
             String line;
-            
+            while ((line = reader.readLine() != null))
+            {
+                line = tine.trim(); 
+                // good for presentation 
+                //make sure to check line is not empty
+                if(!line.isEmpty())
+                {
+                    wordbankused.add(line);
+                }
+            }
+            System.out.println("Words know being played from ComedyGenre.txt");
+          } catch(IOException e)
+          {
+            System.out.println("Error was not able to read words from ComedyGenre.txt")
+          } 
     }
 }
