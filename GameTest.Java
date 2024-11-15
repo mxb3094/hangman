@@ -13,6 +13,22 @@ public class GameTest
     
     int userselection = scanner.nextInt();
 
+    Genre genre;
+    switch (user selection)
+    {
+        case 1:
+            genre = new ActionGenre();
+            break;
+        case 2:
+            genre = new Comedygenre();
+            break;
+        defualt:
+        System.out.println("Not a valid selction you will start at comedy");
+        genre = new ActionGenre();
+        break;
+    }
+    Hangman newgame = Hangman(Genre);
+    newgame.play();
     }
 
 }
