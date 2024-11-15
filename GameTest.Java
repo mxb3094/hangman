@@ -10,6 +10,7 @@ public class GameTest
     System.out.println("Press 1 for Action Genre: ");
     System.out.println("Press 2 for Comedy Genre: ");
     System.out.println("Press 3 for Animated Genre: ");
+    
     int userselection = scanner.nextInt();
 
     }

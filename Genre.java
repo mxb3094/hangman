@@ -1,0 +1,5 @@
+//import
+public interface Genre 
+{
+    
+}
