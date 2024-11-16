@@ -47,3 +47,4 @@ public class ActionGenre implements Genre
     {
         return wordbankused;
     }
+}
