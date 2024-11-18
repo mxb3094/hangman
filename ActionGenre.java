@@ -27,7 +27,7 @@ public class ActionGenre implements Genre
           } 
              catch(IOException e)
           {
-            System.out.println("Error was not able to read words from ActionGenre.txt")
+            System.out.println("Error was not able to read words from ActionGenre.txt");
           } 
     }
    
