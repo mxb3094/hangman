@@ -14,7 +14,7 @@ public class GameTest
     int userselection = scanner.nextInt();
 
     Genre genre;
-    switch (user selection)
+    switch (userselection)
     {
         case 1:
             genre = new ActionGenre();
