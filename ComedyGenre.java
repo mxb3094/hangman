@@ -26,7 +26,7 @@ public class ComedyGenre implements Genre
             System.out.println("Words know being played from ComedyGenre.txt");
           } catch(IOException e)
           {
-            System.out.println("Error was not able to read words from ComedyGenre.txt")
+            System.out.println("Error was not able to read words from ComedyGenre.txt");
           } 
     }
     //COMEDY GENRE method

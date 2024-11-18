@@ -14,7 +14,7 @@ public class Hangman
         this.genre = genre;
         List<String> wordbankused = genre.getWordsUsed();
 
-    }
+    
    //start selecting a word to use
    if (wordbankused.isEmpty())
    {
