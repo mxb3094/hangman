@@ -1,4 +1,4 @@
-import java.util.scanner;
+import java.util.Scanner;
 public class GameTest
 {
     //main class to execute our program
