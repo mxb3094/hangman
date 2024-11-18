@@ -30,11 +30,8 @@ public class ActionGenre implements Genre
             System.out.println("Error was not able to read words from ActionGenre.txt")
           } 
     }
-    @Override
-    public List<String> getWordsUsed()
-    {
-        return wordbankused;
-    }
+   
+   
         //Action GENRE method
     public ActionGenre()
     {
@@ -43,6 +40,7 @@ public class ActionGenre implements Genre
 
     }
     //specific methos implementation for this class
+    @Override
     public List<String> getWordsUsed()
     {
         return wordbankused;
