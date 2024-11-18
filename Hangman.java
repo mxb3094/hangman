@@ -80,7 +80,7 @@ public void start()
                 if(getWordGuess().charAt(i) == attempt )
                 {
                     //sets to attempt
-                    getGuessCurrent().setCharAt(i,attempt)
+                    getGuessCurrent().setCharAt(i,attempt);
                 }
             }
         }else{
@@ -92,7 +92,7 @@ public void start()
     //now to see if they won 
     if(getGuessCurrent().indexOf("_") < 0)
     {
-        System.out.printlin("Congratsss You Won! our game of Hangman"+ getWordGuess());
+        System.out.println("Congratsss You Won! our game of Hangman"+ getWordGuess());
         //attempts if they won
     }else{
         System.out.println("Game is over the word was "+ getWordGuess());
