@@ -15,7 +15,7 @@ public class ActionGenre implements Genre
             String line;
             while ((line = reader.readLine() != null))
             {
-                line = tine.trim(); 
+                line = line.trim(); 
                 // good for presentation 
                 //make sure to check line is not empty
                 if(!line.isEmpty())
