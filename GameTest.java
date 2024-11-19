@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 public class GameTest
 {
@@ -26,11 +28,13 @@ public class GameTest
             genre= new AnimatedGenre();
         defualt:
         System.out.println("Not a valid selction you will start at comedy");
-        genre = new ActionGenre();
+        genre = new ComedyGenre();
         break;
     }
-    Hangman newgame = Hangman(genre);
-    newgame.play();
+     Hangman newgame = new Hangman(genre);
+
+    newgame.start();
+    scanner.close();
     }
 
 }
