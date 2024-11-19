@@ -26,6 +26,7 @@ public class GameTest
             break;
         case 3:
             genre= new AnimatedGenre();
+            break;
         default:
         System.out.println("Not a valid selction you will start at comedy");
         genre = new ComedyGenre();
