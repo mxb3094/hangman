@@ -28,10 +28,12 @@ public class GameTest
             genre= new AnimatedGenre();
             break;
         default:
+            // set defualt guess to go straight to comedy
         System.out.println("Not a valid selction you will start at comedy");
         genre = new ComedyGenre();
         break;
     }
+    
      Hangman newgame = new Hangman(genre);
 
     newgame.start();
