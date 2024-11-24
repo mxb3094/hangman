@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 public class ComedyGenre implements Genre
 {
-    private List<String> wordbankused;
+    private List<String> WordBankUsed;
 
     //method to read words from file
     private void LoadWordsUsedFromFile()
@@ -21,7 +21,7 @@ public class ComedyGenre implements Genre
                 //make sure to check line is not empty
                 if(!line.isEmpty())
                 {
-                    wordbankused.add(line);
+                    WordBankUsed.add(line);
                 }
             }
             System.out.println("Words know being played from ComedyGenre.txt");
@@ -33,7 +33,7 @@ public class ComedyGenre implements Genre
     //COMEDY GENRE method
     public ComedyGenre()
     {
-        wordbankused = new ArrayList<>();
+        WordBankUsed = new ArrayList<>();
         LoadWordsUsedFromFile();
 
     }
@@ -41,6 +41,6 @@ public class ComedyGenre implements Genre
     //specific methos implementation for this class
     public List<String> getWordsUsed()
     {
-        return wordbankused;
+        return WordBankUsed;
     }
 }

@@ -6,7 +6,7 @@ import java.io.FileReader;
 
 public class AnimatedGenre implements Genre
 {
-    private List<String> wordbankused;
+    private List<String> WordBankUsed;
 
     //method to read words from file
     private void LoadWordsUsedFromFile()
@@ -21,7 +21,7 @@ public class AnimatedGenre implements Genre
                 //make sure to check line is not empty
                 if(!line.isEmpty())
                 {
-                    wordbankused.add(line);
+                    WordBankUsed.add(line);
                 }
             }
             System.out.println("Words know being played from AnimatedGenre.txt");
@@ -36,7 +36,7 @@ public class AnimatedGenre implements Genre
         //Action GENRE method
     public AnimatedGenre()
     {
-        wordbankused = new ArrayList<>();
+        WordBankUsed = new ArrayList<>();
         LoadWordsUsedFromFile();
 
     }
@@ -44,6 +44,6 @@ public class AnimatedGenre implements Genre
     @Override
     public List<String> getWordsUsed()
     {
-        return wordbankused;
+        return WordBankUsed;
     }
 }

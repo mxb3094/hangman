@@ -15,19 +15,19 @@ public class Hangman
     public Hangman(Genre genre)
     {
         this.genre = genre;
-        List<String> wordbankused = genre.getWordsUsed();
+        List<String> WordBankUsed = genre.getWordsUsed();
 
     
    //start selecting a word to use
    //checking to se if wordbank is empty
-   if (wordbankused.isEmpty())
+   if (WordBankUsed.isEmpty())
    {
     System.out.println("No words are able to choose from");
     return;
    }
  // when not empty it will choose choose a random word from the filr
    Random random = new Random();
-   setWordGuess(wordbankused.get(random.nextInt(wordbankused.size())));
+   setWordGuess(WordBankUsed.get(random.nextInt(WordBankUsed.size())));
    // shows the guess to the user 
    setGuessCurrent(new StringBuilder("_".repeat(getWordGuess().length())));
 
@@ -76,7 +76,7 @@ public void start()
     {
         System.out.println("The current guess is " + getGuessCurrent());
         //shows the current guess
-        System.out.println("The attempts remaining are: d"+getRemainingAttempts());
+        System.out.println("The attempts remaining are: "+getRemainingAttempts());
         //this shows the attemps remaing
         System.out.println("Please enter a letter:");
         char attempt = scanner.nextLine().charAt(0);
